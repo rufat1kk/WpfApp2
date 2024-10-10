@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Пример WPF приложения" Height="350" Width="525">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Закрыть" Click="MenuItem_Close_Click" ToolTip="Закрыть приложение"/>
+            </MenuItem>
+            <MenuItem Header="Настройки">
+                <MenuItem Header="Красный" Click="MenuItem_Red_Click" ToolTip="Изменить фон на красный"/>
+                <MenuItem Header="Зеленый" Click="MenuItem_Green_Click" ToolTip="Изменить фон на зеленый"/>
+                <MenuItem Header="Синий" Click="MenuItem_Blue_Click" ToolTip="Изменить фон на синий"/>
+            </MenuItem>
+            <MenuItem Header="О разработчике" Click="MenuItem_About_Click" ToolTip="Информация о разработчике"/>
+        </Menu>
+
+        <ToolBar DockPanel.Dock="Top">
+            <Button Content="Красный" Click="MenuItem_Red_Click" ToolTip="Изменить фон на красный"/>
+            <Button Content="Зеленый" Click="MenuItem_Green_Click" ToolTip="Изменить фон на зеленый"/>
+            <Button Content="Синий" Click="MenuItem_Blue_Click" ToolTip="Изменить фон на синий"/>
+            <Separator/>
+            <Button Content="Закрыть" Click="MenuItem_Close_Click" ToolTip="Закрыть приложение"/>
+            <Button Content="О разработчике" Click="MenuItem_About_Click" ToolTip="Информация о разработчике"/>
+        </ToolBar>
+
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem x:Name="statusBarItem" Content="Готов"/>
+        </StatusBar>
+    </DockPanel>
+</Window>
